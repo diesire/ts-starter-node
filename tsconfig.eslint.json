@@ -1,0 +1,9 @@
+// See https://github.com/typescript-eslint/typescript-eslint/releases/tag/v2.0.0
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "src/test/**/*.spec.ts"
+  ],
+  "exclude": []
+}
