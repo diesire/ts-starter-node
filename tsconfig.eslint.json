@@ -3,7 +3,7 @@
   "extends": "./tsconfig.json",
   "include": [
     "src/**/*.ts",
-    "src/test/**/*.spec.ts"
+    "src/**/*.spec.ts"
   ],
   "exclude": []
 }

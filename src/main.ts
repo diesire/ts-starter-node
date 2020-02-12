@@ -1,16 +1,16 @@
-export function hi() {
-  return 'Hello';
+export function hi(): string {
+  return 'Hello'
 }
 
 export class Greeter {
-  public hi() {
-    function foo() {
-      return 'H';
+  public hi(): string {
+    function foo(): string {
+      return 'H'
     }
 
-    function bar() {
-      return foo() + 'ello';
+    function bar(): string {
+      return foo() + 'ello'
     }
-    return bar();
+    return bar()
   }
 }
