@@ -1,25 +1,26 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "outDir": "dist",
-      "importHelpers": true,
-      "sourceMap": true,
-      "allowSyntheticDefaultImports": true,
-      "baseUrl": ".",
-      "paths": {
-        "*": [
-          "node_modules/",
-        ],
-        "typings/*": [
-          "src/typings/*"
-        ]
-      },
-    },
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "src/**/*.spec.ts"
-    ]
-  }
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "preserveSymlinks": true, //https://github.com/TypeStrong/ts-node/issues/831#issuecomment-492238938
+    "paths": {
+      "*": ["node_modules/"],
+      "typings/*": ["src/*"]
+      // Declare your local packages like this
+      // "@diesire/slate-linter":["slate-linter/src/main.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts"]
+}

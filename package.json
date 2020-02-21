@@ -1,21 +1,28 @@
 {
-  "name": "ts-node-starter",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@diesire/ts-node-starter",
+  "version": "0.0.0",
+  "description": "Starter project for node packages with TS, Jest, Eslint, Prettier",
   "main": "dist/main.js",
-  "private": true,
+  "types": "dist/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:diesire/ts-node-starter.git",
+    "directory": "utils/ts-node-starter"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "rimraf dist && tsc",
-    "start": "node dist/main.js",
-    "dev": "nodemon --exec ts-node src/main.ts --watch src",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint \"src/**\" --ext .ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "coverage": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "QTeam <qteam.skywise.fr@capgemini.com>",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.0",
     "@types/node": "^13.5.1",
@@ -25,11 +32,11 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-jest": "^23.6.0",
     "jest": "^25.1.0",
-    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.1",
     "ts-jest": "^25.0.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
-  }
+  },
+  "dependencies": {}
 }
